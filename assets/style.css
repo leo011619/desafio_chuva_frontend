@@ -20,3 +20,21 @@
   font-family: "Roboto", sans-serif;
   height: 68px;
 }
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 24px;
+}
+.sidebar_menuList_selected {
+  background-color: #fdf1eb;
+  border-left: 5px solid;
+  border-image: linear-gradient(#ffb455, #ed7839) 0 100%;
+}
