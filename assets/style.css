@@ -1,0 +1,9 @@
+/*------------------------------------Estruturação da página-------------------------------------------------------*/
+
+.pagina {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 220px;
+}
