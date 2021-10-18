@@ -38,3 +38,19 @@ li {
   border-left: 5px solid;
   border-image: linear-gradient(#ffb455, #ed7839) 0 100%;
 }
+
+/*----------------------------------------------Main--------------------------------------------------------------*/
+.main {
+  flex-direction: column;
+}
+/*----------------------------------------------Main Title--------------------------------------------------------------*/
+.main_title {
+  display: flex;
+  flex-direction: row;
+  width: 1146px;
+  height: 68px;
+  background-color: #fdf1eb;
+}
+.main_title_anais {
+  flex-direction: column;
+}
