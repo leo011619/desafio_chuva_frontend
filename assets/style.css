@@ -140,6 +140,10 @@ header {
   flex-direction: column;
   padding: 20px 45px 0px 0px;
 }
+.main_front_detalhes_buttons {
+  display: flex;
+}
+
 .main_front_detalhes_buttons > button {
   color: #ffffff;
   background-color: var(--laranja);
@@ -148,6 +152,7 @@ header {
   font-size: 16px;
   border: 0px;
   padding: 3px 12px;
+  margin-right: 5px;
 }
 .main_front_detalhes > span {
   color: var(--laranja);
@@ -159,17 +164,32 @@ header {
   border: 1px solid #ececec;
   width: 242px;
   font-family: var(--quickSand);
-  font-size: 14px;
+  font-size: 12px;
+  overflow-y: scroll;
+  height: 394px;
 }
 
 .main_front_detalhes_box_title {
   height: 45px;
   background-color: var(--laranjinha);
-  border-bottom: 1px solid #ececec;
+  border: 1px solid #ececec;
+  border-bottom: 0px;
   font-family: var(--roboto);
   font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 15px;
+}
+.main_front_detalhes_box ul {
+  list-style: none;
+  padding-left: 15px;
+  padding-bottom: 16px;
+}
+.main_front_detalhes_box ul:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 21px;
+}
+.main_front_detalhes_box ul:nth-of-type(3) {
+  color: rgba(0, 0, 0, 0.4);
 }
