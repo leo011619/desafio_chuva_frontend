@@ -1,3 +1,8 @@
+:root {
+  --laranja: #ed7839;
+  --laranjinha: #fdf1eb;
+}
+
 /*------------------------------------Estruturação da página-------------------------------------------------------*/
 
 .pagina {
@@ -14,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(#ffb354, #ee7a3a);
+  background-image: linear-gradient(#ffb354, var(--laranja));
   font-size: 30px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -34,9 +39,9 @@ li {
   padding-left: 24px;
 }
 .sidebar_menuList_selected {
-  background-color: #fdf1eb;
+  background-color: var(--laranjinha);
   border-left: 5px solid;
-  border-image: linear-gradient(#ffb455, #ed7839) 0 100%;
+  border-image: linear-gradient(#ffb455, var(--laranja)) 0 100%;
 }
 
 /*----------------------------------------------Main--------------------------------------------------------------*/
@@ -49,7 +54,7 @@ li {
   flex-direction: row;
   width: 1081px;
   height: 68px;
-  background-color: #fdf1eb;
+  background-color: var(--laranjinha);
   padding: 0 29px 0 36px;
 }
 .main_title_anais {
@@ -76,7 +81,7 @@ li {
   background-position-y: center;
   background-repeat: no-repeat;
   font-family: "Quicksand", sans-serif;
-  background-color: #fdf1eb;
+  background-color: var(--laranjinha);
   border: 1px solid #cccccc;
 }
 .main_title_login {
@@ -108,4 +113,21 @@ li {
   width: 12px;
   height: 12px;
   text-align: center;
+}
+/*----------------------------------------------Main Front--------------------------------------------------------------*/
+.main_front {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_front_video {
+  padding: 20px 31px 30px 45px;
+}
+.main_front_video_title {
+  width: 786px;
+  height: 54px;
+}
+.main_front_detalhes {
+  display: flex;
+  flex-direction: column;
 }
