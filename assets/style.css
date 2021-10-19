@@ -5,6 +5,12 @@
   --quickSand: "Quicksand", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 /*------------------------------------Estruturação da página-------------------------------------------------------*/
 
 body {
@@ -58,6 +64,7 @@ header {
   height: 68px;
   background-color: var(--laranjinha);
   padding: 0 29px 0 36px;
+  box-sizing: unset;
 }
 .header_anais {
   display: flex;
@@ -125,7 +132,52 @@ header {
 
 .main_front_video {
   padding: 20px 31px 30px 45px;
+  position: relative;
 }
+
+.main_front_video video {
+  position: relative;
+  z-index: 0;
+}
+
+.main_front_video_overlay1 {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  font-family: var(--roboto);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+  color: #ffffff;
+  width: 668px;
+  margin-left: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main_front_video_overlay2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 65%;
+  z-index: 1;
+  font-family: var(--roboto);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-left: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+.main_front_video_overlay2 img {
+  border-radius: 50%;
+  border: 1px solid var(--laranja);
+  margin-right: 17px;
+}
+.main_front_video_overlay2 h1 {
+  margin-bottom: 5px;
+}
+
 .main_front_video_title {
   font-family: var(--roboto);
   font-size: 20px;
