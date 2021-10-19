@@ -7,11 +7,11 @@
 
 /*------------------------------------Estruturação da página-------------------------------------------------------*/
 
-.pagina {
+body {
   display: flex;
   flex-direction: row;
 }
-.sidebar {
+sidebar {
   width: 220px;
   height: 2508px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -51,7 +51,7 @@ li {
   flex-direction: column;
 }
 /*----------------------------------------------Main Title--------------------------------------------------------------*/
-.main_title {
+header {
   display: flex;
   flex-direction: row;
   width: 1081px;
@@ -59,7 +59,7 @@ li {
   background-color: var(--laranjinha);
   padding: 0 29px 0 36px;
 }
-.main_title_anais {
+.header_anais {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,15 +67,15 @@ li {
   font-size: 14px;
   padding-right: 110px;
 }
-.main_title_anais > span {
+.header_anais > span {
   font-size: 22px;
 }
-.main_title_languageButton {
+.header_languageButton {
   display: flex;
   align-items: center;
   margin-right: 22px;
 }
-.main_title_languageButton > select {
+.header_languageButton > select {
   width: 97px;
   height: 34px;
   padding-left: 17px;
@@ -86,7 +86,7 @@ li {
   background-color: var(--laranjinha);
   border: 1px solid #cccccc;
 }
-.main_title_login {
+.header_login {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -95,17 +95,17 @@ li {
   padding-top: 17px;
   padding-right: 8px;
 }
-.main_title_login > span {
+.header_login > span {
   font-size: 14px;
 }
-.main_title_image {
+.header_image {
   padding-top: 17px;
   position: relative;
 }
-.main_title_image > img {
+.header_image > img {
   border-radius: 50%;
 }
-.main_title_image > span {
+.header_image > span {
   font-family: "Roboto", sans-serif;
   position: absolute;
   right: -3px;
@@ -149,8 +149,12 @@ li {
   border: 0px;
   padding: 3px 12px;
 }
-.main_front_detalhes {
+.main_front_detalhes > span {
   color: var(--laranja);
   font-family: var(--roboto);
   font-size: 14px;
+  padding: 12px 0px 17px;
+}
+.main_front_detalhes_box {
+  border: 1px solid #ececec;
 }
