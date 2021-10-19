@@ -27,12 +27,12 @@ sidebar {
   font-family: var(--roboto);
   height: 68px;
 }
-ul {
+.sidebar_menuList ul {
   list-style-type: none;
   padding-left: 0px;
   margin-top: 0px;
 }
-li {
+.sidebar_menuList li {
   padding-top: 7px;
   padding-bottom: 7px;
   font-size: 15px;
@@ -157,4 +157,19 @@ header {
 }
 .main_front_detalhes_box {
   border: 1px solid #ececec;
+  width: 242px;
+  font-family: var(--quickSand);
+  font-size: 14px;
+}
+
+.main_front_detalhes_box_title {
+  height: 45px;
+  background-color: var(--laranjinha);
+  border-bottom: 1px solid #ececec;
+  font-family: var(--roboto);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
 }
