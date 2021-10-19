@@ -1,6 +1,8 @@
 :root {
   --laranja: #ed7839;
   --laranjinha: #fdf1eb;
+  --roboto: "Roboto", sans-serif;
+  --quickSand: "Quicksand", sans-serif;
 }
 
 /*------------------------------------Estruturação da página-------------------------------------------------------*/
@@ -22,7 +24,7 @@
   background-image: linear-gradient(#ffb354, var(--laranja));
   font-size: 30px;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto);
   height: 68px;
 }
 ul {
@@ -34,7 +36,7 @@ li {
   padding-top: 7px;
   padding-bottom: 7px;
   font-size: 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--quickSand);
   border-bottom: 1px solid #e5e5e5;
   padding-left: 24px;
 }
@@ -61,7 +63,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto);
   font-size: 14px;
   padding-right: 110px;
 }
@@ -80,7 +82,7 @@ li {
   background-image: url(./language\ image.png);
   background-position-y: center;
   background-repeat: no-repeat;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--quickSand);
   background-color: var(--laranjinha);
   border: 1px solid #cccccc;
 }
@@ -88,9 +90,10 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--quickSand);
   font-size: 12px;
   padding-top: 17px;
+  padding-right: 8px;
 }
 .main_title_login > span {
   font-size: 14px;
@@ -124,10 +127,30 @@ li {
   padding: 20px 31px 30px 45px;
 }
 .main_front_video_title {
+  font-family: var(--roboto);
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--laranja);
   width: 786px;
   height: 54px;
+  padding-bottom: 19px;
 }
 .main_front_detalhes {
   display: flex;
   flex-direction: column;
+  padding: 20px 45px 0px 0px;
+}
+.main_front_detalhes_buttons > button {
+  color: #ffffff;
+  background-color: var(--laranja);
+  height: 31px;
+  font-family: var(--roboto);
+  font-size: 16px;
+  border: 0px;
+  padding: 3px 12px;
+}
+.main_front_detalhes {
+  color: var(--laranja);
+  font-family: var(--roboto);
+  font-size: 14px;
 }
