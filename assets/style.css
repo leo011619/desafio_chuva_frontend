@@ -285,3 +285,28 @@ header {
   background-color: #fff;
   color: var(--laranja);
 }
+
+/*----------------------------------------------Main Front Discussao--------------------------------------------------------------*/
+.main_discussao {
+  box-sizing: unset;
+  margin: 0px 45px 30px;
+  width: 1058px;
+  height: auto;
+  text-align: justify;
+  border: var(--bordinha);
+}
+.main_discussao_title {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding-left: 15px;
+  font-family: var(--roboto);
+  background-color: var(--laranjinha);
+  border-bottom: var(--bordinha);
+}
+.main_discussao_box {
+  padding: 15px;
+  font-family: var(--quickSand);
+  font-size: 14px;
+  line-height: 21px;
+}
