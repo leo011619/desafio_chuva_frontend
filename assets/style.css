@@ -14,14 +14,15 @@
 }
 /*------------------------------------Estruturação da página-------------------------------------------------------*/
 
-body {
+.container {
   display: flex;
   flex-direction: row;
 }
 sidebar {
   width: 220px;
-  height: 2508px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  height: 100%;
 }
 /*--------------------------------------------Sidebar------------------------------------------------------------*/
 .sidebar_title {
@@ -56,6 +57,7 @@ sidebar {
 /*----------------------------------------------Main--------------------------------------------------------------*/
 .main {
   flex-direction: column;
+  margin-left: 220px;
 }
 /*----------------------------------------------Main Title--------------------------------------------------------------*/
 header {
@@ -278,6 +280,9 @@ header {
   font-size: 14px;
   line-height: 21px;
 }
+.main_resumo_box p {
+  padding: 10px 0px;
+}
 #myBtn {
   font-family: var(--quickSand);
   border: 0px;
@@ -286,7 +291,7 @@ header {
   color: var(--laranja);
 }
 
-/*----------------------------------------------Main Front Discussão--------------------------------------------------------------*/
+/*----------------------------------------------Main Discussão--------------------------------------------------------------*/
 .main_discussao {
   box-sizing: unset;
   margin: 0px 45px 30px;
@@ -305,7 +310,24 @@ header {
   border-bottom: var(--bordinha);
 }
 
-/*----------------------------------------------Main Front Discussão Box--------------------------------------------------------------*/
+/*----------------------------------------------Main Discussão Criando tópicos--------------------------------------------------------------*/
+.main_discussao_criandoTopico {
+  padding: 15px 17px;
+}
+.main_discussao_criandoTopico label {
+  font-size: 16px;
+  font-family: var(--roboto);
+  color: var(--laranja);
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.main_discussao_criandoTopico input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/*----------------------------------------------Main Discussão Box--------------------------------------------------------------*/
 
 .main_discussao_box {
   display: flex;
@@ -380,4 +402,9 @@ header {
 }
 .main_discussao_topico_icons button:nth-child(2) {
   color: var(--laranja);
+}
+
+/*----------------------------------------------Footer--------------------------------------------------------------*/
+footer {
+  margin-left: 234px;
 }
