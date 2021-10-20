@@ -286,7 +286,7 @@ header {
   color: var(--laranja);
 }
 
-/*----------------------------------------------Main Front Discussao--------------------------------------------------------------*/
+/*----------------------------------------------Main Front Discussão--------------------------------------------------------------*/
 .main_discussao {
   box-sizing: unset;
   margin: 0px 45px 30px;
@@ -304,9 +304,80 @@ header {
   background-color: var(--laranjinha);
   border-bottom: var(--bordinha);
 }
+
+/*----------------------------------------------Main Front Discussão Box--------------------------------------------------------------*/
+
 .main_discussao_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 15px;
   font-family: var(--quickSand);
   font-size: 14px;
   line-height: 21px;
+}
+.main_discussao_box h4 {
+  color: var(--laranja);
+  font-size: 18px;
+  padding-bottom: 27px;
+}
+.main_discussao_box_icons span {
+  margin: 0px 25px 35px;
+  font-size: 30px;
+}
+.main_discussao_box p {
+  width: 629px;
+  text-align: center;
+}
+
+.main_discussao_box button {
+  background-image: linear-gradient(#ffb354, var(--laranja));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  border-radius: 5%;
+  padding: 7px 14px;
+  font-size: 15px;
+  margin: 15px;
+}
+
+/*----------------------------------------------Main Front Discussão Tópicos--------------------------------------------------------------*/
+.main_discussao_topicos {
+  border-top: var(--bordinha);
+  margin: 0px 16px 15px;
+  padding-top: 30px;
+}
+.main_discussao_topicos_box {
+  border: var(--bordinha);
+  padding: 7px 24px;
+  font-size: 14px;
+  font-family: var(--quickSand);
+  border-radius: 2%;
+  margin-bottom: 17px;
+}
+.main_discussao_topicos_box h4 {
+  font-size: 16px;
+  color: var(--laranja);
+  padding-bottom: 3px;
+}
+.main_discussao_topicos_box p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.main_discussao_topico_icons {
+  padding-top: 11px;
+  display: flex;
+}
+.main_discussao_topico_icons button {
+  border: 0px;
+  margin-right: 15px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.main_discussao_topico_icons button:first-child {
+  color: var(--laranja);
+}
+.main_discussao_topico_icons button:nth-child(2) {
+  color: var(--laranja);
 }
