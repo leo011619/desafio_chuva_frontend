@@ -174,18 +174,19 @@ header {
   border: 1px solid var(--laranja);
   margin-right: 17px;
 }
-.main_front_video_overlay2 h1 {
+.main_front_video_overlay2 p {
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
 .main_front_video_title {
   font-family: var(--roboto);
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 900;
   color: var(--laranja);
   width: 786px;
   height: 54px;
-  padding-bottom: 19px;
+  margin-bottom: 19px;
 }
 .main_front_detalhes {
   display: flex;
@@ -235,13 +236,14 @@ header {
 }
 .main_front_detalhes_box ul {
   list-style: none;
-  padding-left: 15px;
-  padding-bottom: 16px;
+  padding: 15px 0px 5px 15px;
 }
 .main_front_detalhes_box ul:nth-of-type(2) {
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 16px;
 }
 .main_front_detalhes_box ul:nth-of-type(3) {
   color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
 }
