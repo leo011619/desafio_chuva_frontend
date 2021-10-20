@@ -259,7 +259,7 @@ header {
   box-sizing: unset;
   margin: 0px 45px 30px;
   width: 1058px;
-  height: 189px;
+  height: auto;
   text-align: justify;
   border: var(--bordinha);
 }
@@ -273,7 +273,15 @@ header {
   border-bottom: var(--bordinha);
 }
 .main_resumo_box {
-  padding-left: 15px;
+  padding: 15px;
   font-family: var(--quickSand);
   font-size: 14px;
+  line-height: 21px;
+}
+#myBtn {
+  font-family: var(--quickSand);
+  border: 0px;
+  font-size: 14px;
+  background-color: #fff;
+  color: var(--laranja);
 }
