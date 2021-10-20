@@ -3,6 +3,7 @@
   --laranjinha: #fdf1eb;
   --roboto: "Roboto", sans-serif;
   --quickSand: "Quicksand", sans-serif;
+  --bordinha: 1px solid #ececec;
 }
 
 * {
@@ -130,6 +131,8 @@ header {
   flex-direction: row;
 }
 
+/*----------------------------------------------Main Front video--------------------------------------------------------------*/
+
 .main_front_video {
   padding: 20px 31px 30px 45px;
   position: relative;
@@ -178,7 +181,7 @@ header {
   font-size: 30px;
   margin-bottom: 5px;
 }
-
+/*----------------------------------------------Main Front Title--------------------------------------------------------------*/
 .main_front_video_title {
   font-family: var(--roboto);
   font-size: 20px !important;
@@ -188,6 +191,9 @@ header {
   height: 54px;
   margin-bottom: 19px;
 }
+
+/*----------------------------------------------Main Front Detalhes--------------------------------------------------------------*/
+
 .main_front_detalhes {
   display: flex;
   flex-direction: column;
@@ -214,7 +220,7 @@ header {
   padding: 12px 0px 17px;
 }
 .main_front_detalhes_box {
-  border: 1px solid #ececec;
+  border: var(--bordinha);
   width: 242px;
   font-family: var(--quickSand);
   font-size: 12px;
@@ -225,7 +231,7 @@ header {
 .main_front_detalhes_box_title {
   height: 45px;
   background-color: var(--laranjinha);
-  border: 1px solid #ececec;
+  border: var(--bordinha);
   border-bottom: 0px;
   font-family: var(--roboto);
   font-size: 20px;
@@ -246,4 +252,28 @@ header {
 .main_front_detalhes_box ul:nth-of-type(3) {
   color: rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
+}
+
+/*----------------------------------------------Main Front Resumo--------------------------------------------------------------*/
+.main_resumo {
+  box-sizing: unset;
+  margin: 0px 45px 30px;
+  width: 1058px;
+  height: 189px;
+  text-align: justify;
+  border: var(--bordinha);
+}
+.main_resumo_title {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding-left: 15px;
+  font-family: var(--roboto);
+  background-color: var(--laranjinha);
+  border-bottom: var(--bordinha);
+}
+.main_resumo_box {
+  padding-left: 15px;
+  font-family: var(--quickSand);
+  font-size: 14px;
 }
