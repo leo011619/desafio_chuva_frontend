@@ -357,6 +357,36 @@ header {
   padding: 7px 30px;
   color: #000;
 }
+
+/*----------------------------------------------Main Discussão Envio do Tópico--------------------------------------------------------------*/
+
+.main_discussao_envioTopico {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--quickSand);
+  font-size: 14px;
+}
+.main_discussao_envioTopico p {
+  color: var(--laranja);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0px 18px;
+}
+
+.main_discussao_envioTopico a {
+  color: var(--laranja);
+  padding: 29px 0px 47px;
+}
+
+.main_discussao_envioTopico button {
+  color: #ffffff;
+  background-image: linear-gradient(#ffb354, var(--laranja));
+  padding: 8px 56px;
+  border: none;
+  margin-bottom: 30px;
+}
+
 /*----------------------------------------------Main Discussão Box--------------------------------------------------------------*/
 
 .main_discussao_box {
@@ -432,6 +462,32 @@ header {
   color: var(--laranja);
 }
 .main_discussao_topico_icons button:nth-child(2) {
+  color: var(--laranja);
+}
+#overlayBox {
+  display: none;
+}
+#topicoEnviado {
+  background-color: rgba(221, 221, 221);
+  color: rgba(0, 0, 0, 0.15);
+  padding-bottom: 47px;
+}
+#topicoEnviado h4 {
+  color: #ed78393b;
+}
+.main_discussao_topicos_overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  font-family: var(--quickSand);
+  margin-top: 25px;
+  width: 70%;
+}
+.main_discussao_topicos_overlay b {
+  padding: 8px;
+}
+.main_discussao_topicos_overlay a {
   color: var(--laranja);
 }
 

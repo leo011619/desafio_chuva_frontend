@@ -143,6 +143,12 @@
             <div class="main_discussao_title">
                 <h3>Discussões</h3>
             </div>
+            <section id="envioTopico" class="main_discussao_envioTopico">
+                <p>Seu tópico foi enviado com sucesso! :D</p>
+                Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!
+                <a href="#">Descubra outros trabalhos!</a>
+                <button>criar novo tópico</button>
+            </section>
             <section id="sectionCriar" class="main_discussao_criandoTopico">
                 <form>
                     <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
@@ -157,7 +163,7 @@
                                 <button style="font-style: italic;"> I</button>               
                             </div>
                             <div class="main_discussao_criandoTopico_buttons_btnEnviar">
-                                <button>Enviar</button>
+                                <button onclick="changeDisplayEnvio()">Enviar</button>
                             </div>
 
                         </div>
@@ -182,6 +188,21 @@
                  criar tópico</a>
             </section>
             <section class="main_discussao_topicos">
+                <div id="overlayBox" class="main_discussao_topicos_overlayBox">
+                <div class="main_discussao_topicos_overlay">
+                    <span class="material-icons">
+                        done_all
+                        </span>
+                        <b> Aguardando feedback dos autores </b> 
+                        <a href="#">Editar tópico</a>
+                </div>
+                <div id="topicoEnviado" class="main_discussao_topicos_box">
+
+                    <h4>Assunto da pergunta aparece aqui</h4>
+                    <p>Carlos Henrique Santos</p>
+                    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                </div>
+            </div>
                 <div class="main_discussao_topicos_box">
 
                 <h4>Assunto da pergunta aparece aqui</h4>

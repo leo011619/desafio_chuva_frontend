@@ -18,5 +18,15 @@ function myFunction() {
 //----------Função do Criar tópico----------------------------------//
 function changeDisplaySec() {
   document.getElementById("sectionCriar").style.display = "flex";
+  document.getElementById("sectionCriar").style.flexDirection = "column";
   document.getElementById("section_box").style.display = "none";
 }
+
+//----------Função do Envio tópico----------------------------------//
+function changeDisplayEnvio() {
+  document.getElementById("sectionCriar").style.display = "none";
+  document.getElementById("envioTopico").style.display = "flex";
+  document.getElementById("overlayBox").style.display = "flex";
+}
+
+//----------Função do segundo envio----------------------------------//
