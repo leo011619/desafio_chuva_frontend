@@ -15,3 +15,8 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+//----------Função do Criar tópico----------------------------------//
+function changeDisplaySec() {
+  document.getElementById("sectionCriar").style.display = "flex";
+  document.getElementById("section_box").style.display = "none";
+}

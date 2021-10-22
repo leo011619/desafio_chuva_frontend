@@ -143,16 +143,28 @@
             <div class="main_discussao_title">
                 <h3>Discussões</h3>
             </div>
-            <section class="main_discussao_criandoTopico">
+            <section id="sectionCriar" class="main_discussao_criandoTopico">
                 <form>
+                    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                     <label for="username"> Assunto </label><br>
                     <input type="text" placeholder="Defina um tópico sucinto para notificar os autores..." id="assunto" name="username"><br>
                     <label for="pwd">Conteúdo</label><br>
                     <textarea id="conteudo" name="conteudo" rows="4" cols="120">
                         </textarea>
+                        <div class="main_discussao_criandoTopico_buttons">
+                            <div class="main_discussao_criandoTopico_buttons_text">
+                                <button>  B </button>
+                                <button style="font-style: italic;"> I</button>               
+                            </div>
+                            <div class="main_discussao_criandoTopico_buttons_btnEnviar">
+                                <button>Enviar</button>
+                            </div>
+
+                        </div>
+
                   </form>
             </section>
-            <section class="main_discussao_box">
+            <section id="section_box" class="main_discussao_box">
                 <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
                 <div class="main_discussao_box_icons">
                     <span class="material-icons">
@@ -166,8 +178,8 @@
                     </span>
                 </div>
                 <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                <button> <span class="material-icons"> add </span>   
-                 criar tópico</button>
+                <a id="btn_criarTopico" href="javascript:changeDisplaySec()" > <span class="material-icons"> add </span>   
+                 criar tópico</a>
             </section>
             <section class="main_discussao_topicos">
                 <div class="main_discussao_topicos_box">
@@ -205,7 +217,9 @@
     <footer>
         <img src="./assets/imagem - footer.png" alt="">
     </footer>
-      <script src="script.js"></script>
+      <script src="script.js">
+          
+      </script>
   </body>
   
 </html>
